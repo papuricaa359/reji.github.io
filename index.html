@@ -13,14 +13,14 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #ffffff;
         }
 
         .container {
             position: relative;
             width: 1000px;
             height: 700px;
-            background-color: aqua;
+            background-color: rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -47,14 +47,18 @@
             width: 250px;
             height: 50px;
             font-size: 40px;
-            background-color: aquamarine;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .prosele {
+            border: solid 1px #000;
         }
 
         #proqty {
             width: 100px;
             height: 50px;
             font-size: 40px;
-            background-color: #73ff00;
+            background-color: #ffffff;
         }
 
         #ko {
@@ -73,7 +77,7 @@
             height: 270px;
             width: 400px;
             font-size: 40px;
-            color: #000; /* テキストカラーを黒に設定 */
+            color: #000;
         }
 
         .tenkey {
@@ -89,7 +93,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: #000; /* テキストカラーを黒に設定 */
+            color: #000;
         }
 
         .number,
@@ -145,14 +149,15 @@
             width: 350px;
             height: 50px;
             font-size: 40px;
-            background-color: rgb(224, 25, 188);
+            background-color: rgb(255, 255, 255);
         }
 
         .name {
             margin: 0;
             width: 150px;
             height: 50px;
-            background-color: rgb(36, 185, 56);
+            background-color: rgb(255, 255, 255);
+            border-right: solid 1px #000;
             font-size: 35px;
             text-align: center;
         }
@@ -162,7 +167,7 @@
             width: 80px;
             height: 50px;
             font-size: 40px;
-            background-color: rgb(233, 240, 26);
+            background-color: rgb(255, 255, 255);
         }
 
         #allq {
@@ -177,13 +182,10 @@
             width: 220px;
             height: 50px;
             font-size: 40px;
-            background-color: #ff0000;
+            background-color: #ffffff;
         }
 
-        button {
-            color: inherit; /* テキストカラーを継承する */
-            
-        }
+        
     </style>
 </head>
 
@@ -472,7 +474,7 @@
             } else if (discountflag === 1) {
                 payall = total - discount;
                 payallshow.textContent = payall;
-                
+
                 discount = 0;
                 discountflag = 0;
                 input_value = 0;
@@ -490,7 +492,7 @@
             }
             if (finshflag === 1) {
                 reset();
-            }else{
+            } else {
                 azukariflag = 1;
             }
             if (changeflag === 1) {
@@ -513,30 +515,30 @@
 
 
         });
-        function reset(){
+        function reset() {
             input_value = 0;
-                yakisobaflag = 0;
-                eggflag = 0;
-                quapro = "";
-                pricenow = 0;
-                total = 0;
-                totalqty = 0;
-                discountflag = 0;
-                discount = 0;
-                payall = 0;
-                azukari = 0;
-                azukariflag = 0;
-                change = 0;
-                changeflag = 0;
-                finshflag = 0;
-                productview.textContent = "";
-                proqty.textContent = "";
-                totalqtyshow.textContent = 0;
-                totalamount.textContent = 0;
-                discountshow.textContent = 0;
-                payallshow.textContent = 0;
-                azukarishow.textContent = 0;
-                changeshow.textContent = 0;
+            yakisobaflag = 0;
+            eggflag = 0;
+            quapro = "";
+            pricenow = 0;
+            total = 0;
+            totalqty = 0;
+            discountflag = 0;
+            discount = 0;
+            payall = 0;
+            azukari = 0;
+            azukariflag = 0;
+            change = 0;
+            changeflag = 0;
+            finshflag = 0;
+            productview.textContent = "";
+            proqty.textContent = "";
+            totalqtyshow.textContent = 0;
+            totalamount.textContent = 0;
+            discountshow.textContent = 0;
+            payallshow.textContent = 0;
+            azukarishow.textContent = 0;
+            changeshow.textContent = 0;
         }
     </script>
 </body>
