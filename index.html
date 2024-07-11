@@ -7,172 +7,176 @@
     <title>レジ</title>
     <style>
         body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
 
-.container {
-    position: relative;
-    width: 1000px;
-    height: 700px;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .container {
+            position: relative;
+            width: 1000px;
+            height: 700px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.flex {
-    display: flex;
-}
+        .flex {
+            display: flex;
+        }
 
-.left {
-    width: 400px;
-    margin-right: 100px;
-}
+        .left {
+            width: 400px;
+            margin-right: 100px;
+        }
 
-#id {
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
+        #id {
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
 
-#proname {
-    width: 250px;
-    height: 50px;
-    font-size: 40px;
-    background-color: aquamarine;
-}
+        #proname {
+            width: 250px;
+            height: 50px;
+            font-size: 40px;
+            background-color: aquamarine;
+        }
 
-#proqty {
-    width: 100px;
-    height: 50px;
-    font-size: 40px;
-    background-color: #73ff00;
-}
+        #proqty {
+            width: 100px;
+            height: 50px;
+            font-size: 40px;
+            background-color: #73ff00;
+        }
 
-#ko {
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    font-size: 40px;
-}
+        #ko {
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            font-size: 40px;
+        }
 
-.product {
-    margin-top: 50px;
-}
+        .product {
+            margin-top: 50px;
+        }
 
-.product button {
-    margin-top: 5px;
-    height: 270px;
-    width: 400px;
-    font-size: 40px;
-}
+        .product button {
+            margin-top: 5px;
+            height: 270px;
+            width: 400px;
+            font-size: 40px;
+        }
 
-.tenkey {
-    width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .tenkey {
+            width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.tenkey button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+        .tenkey button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-.number,
-.wide,
-.confirm,
-.cancelTransaction,
-.cancel {
-    display: inline-block;
-    margin: 0vw;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+        .number,
+        .wide,
+        .confirm,
+        .cancelTransaction,
+        .cancel {
+            display: inline-block;
+            margin: 0vw;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-.number {
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-}
+        .number {
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+        }
 
-.wide {
-    width: 200px;
-    height: 100px;
-    font-size: 50px;
-}
+        .wide {
+            width: 200px;
+            height: 100px;
+            font-size: 50px;
+        }
 
-.confirm {
-    width: 100px;
-    height: 200px;
-    font-size: 50px;
-}
+        .confirm {
+            width: 100px;
+            height: 200px;
+            font-size: 50px;
+        }
 
-.cancelTransactio{
-    width: 100px;
-    height: 100px;
-    font-size: 10px;
-}
-.cancel {
-    width: 100px;
-    height: 100px;
-    font-size: 30px;
-}
+        .cancelTransaction {
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            text-align: center;
+        }
 
-.monyshow {
-    margin-bottom: 50px;
-}
+        .cancel {
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            /* フォントサイズは適宜調整してください */
+            text-align: center;
+            /* 文字を左右中央に揃える */
+        }
 
-.showcont {
-    width: 350px;
-    height: 50px;
-    font-size: 40px;
-    background-color: rgb(224, 25, 188);
-}
+        .monyshow {
+            margin-bottom: 50px;
+        }
 
-.name {
-    margin: 0;
-    width: 150px;
-    height: 50px;
-    background-color: rgb(36, 185, 56);
-    font-size: 35px;
-    text-align: center;
-}
+        .showcont {
+            width: 350px;
+            height: 50px;
+            font-size: 40px;
+            background-color: rgb(224, 25, 188);
+        }
 
-#allqty {
-    margin: 0;
-    width: 80px;
-    height: 50px;
-    font-size: 40px;
-    background-color: rgb(233, 240, 26);
-}
+        .name {
+            margin: 0;
+            width: 150px;
+            height: 50px;
+            background-color: rgb(36, 185, 56);
+            font-size: 35px;
+            text-align: center;
+        }
 
-#allq {
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    text-align: center;
-}
+        #allqty {
+            margin: 0;
+            width: 80px;
+            height: 50px;
+            font-size: 40px;
+            background-color: rgb(233, 240, 26);
+        }
 
-#allmoney {
-    width: 220px;
-    height: 50px;
-    font-size: 40px;
-    background-color: #ff0000;
-}
+        #allq {
+            margin: 0;
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            text-align: center;
+        }
 
+        #allmoney {
+            width: 220px;
+            height: 50px;
+            font-size: 40px;
+            background-color: #ff0000;
+        }
     </style>
 </head>
 
@@ -258,8 +262,13 @@
     <script>
         const productview = document.getElementById('proname');
         const proqty = document.getElementById('proqty');
-        const totalamount = document.getElementById('allmoney');
         const totalqtyshow = document.getElementById('allqty');
+        const totalamount = document.getElementById('allmoney');
+        const discountshow = document.getElementById('dismoney');
+        const payallshow = document.getElementById('paymoney');
+        const azukarishow = document.getElementById('depmoney');
+        const changeshow = document.getElementById('chanmoney');
+
         let input_value = 0;
         let yakisobaflag = 0;
         let eggflag = 0;
@@ -267,6 +276,14 @@
         let pricenow = 0;
         let total = 0;
         let totalqty = 0;
+        let discountflag = 0;
+        let discount = 0;
+        let payall = 0;
+        let azukari = 0;
+        let azukariflag = 0;
+        let change = 0;
+        let changeflag = 0;
+        let finshflag = 0;
         function yakisoba() {
             yakisobaflag = 1;
             eggflag = 0;
@@ -299,9 +316,20 @@
             } else {
                 input_value = input_value * 10 + num;
             }
+
             if (yakisobaflag === 1 || eggflag == 1) {
                 quapro = input_value;
                 valueshow(quapro);
+            } else if (discountflag === 1) {
+                discount = input_value;
+                discountshow.textContent = discount;
+
+            } else if (azukariflag === 1) {
+                azukari = input_value;
+                azukarishow.textContent = azukari;
+                changeflag = 1;
+            } else {
+                input_value = 0;
             }
 
         }
@@ -347,7 +375,21 @@
                 input_value *= 10;
             }
             quapro = input_value;
-            valueshow(quapro);
+            if (yakisobaflag === 1 || eggflag == 1) {
+                valueshow(quapro);
+            } else if (discountflag === 1) {
+                discount = input_value;
+                discountshow.textContent = discount;
+            } else if (azukariflag === 1) {
+                azukari = input_value;
+                azukarishow.textContent = azukari;
+                changeflag = 1;
+            } else {
+                input_value = 0;
+            }
+
+
+
         });
 
         document.getElementById('number00').addEventListener('click', () => {
@@ -355,7 +397,19 @@
                 input_value *= 100;
             }
             quapro = input_value;
-            valueshow(quapro);
+            if (yakisobaflag === 1 || eggflag == 1) {
+                valueshow(quapro);
+            } else if (discountflag === 1) {
+                discount = input_value;
+                discountshow.textContent = discount;
+            } else if (azukariflag === 1) {
+                azukari = input_value;
+                azukarishow.textContent = azukari;
+                changeflag = 1;
+            } else {
+                input_value = 0;
+            }
+
         });
 
         document.getElementById('cancel').addEventListener('click', () => {
@@ -363,16 +417,25 @@
             if (yakisobaflag === 1 || eggflag === 1) {
                 quapro = "";
                 valueshow(quapro);
+            } else if (discountflag === 1) {
+                discount = "";
+                discountshow.textContent = discount;
+            } else if (azukariflag === 1) {
+                azukari = "";
+                azukarishow.textContent = azukari;
+
             }
+
         });
 
         document.getElementById('cancelTransaction').addEventListener('click', () => {
-            // 取引中止の処理
+            reset();
         });
 
         document.getElementById('discount').addEventListener('click', () => {
             // 値引きの処理
             discountflag = 1;
+            input_value = 0;
 
         });
 
@@ -389,6 +452,8 @@
                 totalqty = totalqty + quapro;
                 totalqtyshow.textContent = totalqty;
                 totalamount.textContent = total;
+                payall = total - discount;
+                payallshow.textContent = payall;
                 //  リセット
                 eggflag = 0;
                 yakisobaflag = 0;
@@ -397,16 +462,75 @@
                 valueshow(input_value);
                 productview.textContent = "";
                 proqty.textContent = "";
+            } else if (discountflag === 1) {
+                payall = total - discount;
+                payallshow.textContent = payall;
+                
+                discount = 0;
+                discountflag = 0;
+                input_value = 0;
             }
         });
 
-        document.getElementById('end').addEventListener('click', () => {
-            // 終了の処理
-        });
 
         document.getElementById('settlement').addEventListener('click', () => {
-            // 清算の処理
+            if (discountflag === 1) {
+                payall = total - discount;
+                payallshow.textContent = payall;
+                discount = 0;
+                discountflag = 0;
+                input_value = 0;
+            }
+            if (finshflag === 1) {
+                reset();
+            }else{
+                azukariflag = 1;
+            }
+            if (changeflag === 1) {
+                change = azukari - payall;
+                if (change > 0) {
+                    changeshow.textContent = change;
+                    finshflag = 1;
+                    azukariflag = 0;
+
+                } else {
+                    changeshow.textContent = "入力金不足";
+                    azukari = 0;
+                    input_value = 0;
+                    azukarishow.textContent = azukari;
+                    changeflag === 0;
+                }
+
+
+            }
+
+
         });
+        function reset(){
+            input_value = 0;
+                yakisobaflag = 0;
+                eggflag = 0;
+                quapro = "";
+                pricenow = 0;
+                total = 0;
+                totalqty = 0;
+                discountflag = 0;
+                discount = 0;
+                payall = 0;
+                azukari = 0;
+                azukariflag = 0;
+                change = 0;
+                changeflag = 0;
+                finshflag = 0;
+                productview.textContent = "";
+                proqty.textContent = "";
+                totalqtyshow.textContent = 0;
+                totalamount.textContent = 0;
+                discountshow.textContent = 0;
+                payallshow.textContent = 0;
+                azukarishow.textContent = 0;
+                changeshow.textContent = 0;
+        }
     </script>
 </body>
 
