@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     <title>レジ</title>
     <style>
         body {
@@ -20,23 +21,29 @@
         .container {
             position: relative;
             width: 1000px;
-            height: 660px;
+            height: 700px;
             background-color: rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
 
         .flex {
             display: flex;
         }
-.monyshow .flex {
+
+        .monyshow .flex {
             border: solid 1px #000;
         }
+
         .left {
             width: 400px;
             margin-right: 100px;
+        }
+        input{
+            height: 50px;
+            width: 390px;
+            font-size: 40px;
         }
 
         #id {
@@ -74,7 +81,7 @@
         }
 
         .product {
-            margin-top: 10px;
+            margin-top: 50px;
         }
 
         .product button {
@@ -147,7 +154,7 @@
         }
 
         .monyshow {
-            margin-bottom: 10px;
+            margin-bottom: 50px;
         }
 
         .showcont {
@@ -189,8 +196,6 @@
             font-size: 40px;
             background-color: #ffffff;
         }
-
-        
     </style>
 </head>
 
@@ -198,7 +203,7 @@
     <div class="container">
         <div class="left">
             <!--オーダーID-->
-            <input type="text" id="id" name="id" required placeholder="オーダーID" />
+            <input type="text" id="check" required placeholder="オーダーID">
             <!--選択商品表示-->
             <div class="prosele flex">
                 <div id="proname"></div>
@@ -496,7 +501,8 @@
                 input_value = 0;
             }
             if (finshflag === 1) {
-                reset();
+                register();
+
             } else {
                 azukariflag = 1;
             }
@@ -544,6 +550,26 @@
             payallshow.textContent = 0;
             azukarishow.textContent = 0;
             changeshow.textContent = 0;
+        }
+        function register() {
+            var checkValue = document.getElementById("check").value;
+            var formData = new FormData();
+            formData.append("check", checkValue);
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById("check").value = "";
+                        formData = "";
+                        reset();
+
+                    } else {
+                        alert('登録に失敗しました。再度お試しください。');
+                    }
+                }
+            };
+            xhr.open("POST", "https://script.google.com/macros/s/AKfycbxlKZgyXpio5-XVIL9XZdB1J5c84kcKuAn2p0ExTGr2IwbvdMen-gWGoXXh3zc0TkpmKA/exec");
+            xhr.send(formData);
         }
     </script>
 </body>
